@@ -1,0 +1,7 @@
+.nav-link {
+  @apply text-dark-secondary dark:text-light font-medium text-[16px] px-2.5 py-2 rounded-md w-full cursor-pointer capitalize block;
+
+  &.active {
+    @apply text-light shadow-sm;
+  }
+}

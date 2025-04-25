@@ -1,0 +1,24 @@
+@layer base {
+  body {
+    @apply font-poppins dark:bg-dark-body;
+
+    &::-webkit-scrollbar {
+      @apply w-1.5;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      @apply bg-dark-primary dark:bg-light rounded-sm;
+    }
+  }
+
+  * {
+    @apply m-0 p-0 box-border;
+    transition: all 130ms linear;
+  }
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
